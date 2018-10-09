@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28124.53
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.Api", "Pokedex.Api\Pokedex.Api.csproj", "{0D5AB6FE-7A7C-4C13-B3B2-A2E3F4E6416B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.Client", "Pokedex.Client\Pokedex.Client.csproj", "{3B2208AF-9382-4FCF-BEDF-6B58290E132D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.BlazorApp", "Pokedex.BlazorApp\Pokedex.BlazorApp.csproj", "{54F63227-4E29-4EBF-9587-59E91DEA93F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5AB6FE-7A7C-4C13-B3B2-A2E3F4E6416B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5AB6FE-7A7C-4C13-B3B2-A2E3F4E6416B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5AB6FE-7A7C-4C13-B3B2-A2E3F4E6416B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5AB6FE-7A7C-4C13-B3B2-A2E3F4E6416B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B2208AF-9382-4FCF-BEDF-6B58290E132D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2208AF-9382-4FCF-BEDF-6B58290E132D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2208AF-9382-4FCF-BEDF-6B58290E132D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2208AF-9382-4FCF-BEDF-6B58290E132D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F63227-4E29-4EBF-9587-59E91DEA93F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F63227-4E29-4EBF-9587-59E91DEA93F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F63227-4E29-4EBF-9587-59E91DEA93F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F63227-4E29-4EBF-9587-59E91DEA93F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8E7EDF8-9967-40DA-A344-282C0EE58DAD}
+	EndGlobalSection
+EndGlobal
