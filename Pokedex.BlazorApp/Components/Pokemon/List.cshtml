@@ -1,0 +1,28 @@
+﻿@using Pokedex.Client
+@inject Pokedex.Client.Client PokedexClient
+
+<h2>Pokemons List</h2>
+
+@if (pokemons != null)
+{
+    <ul>
+        @foreach (var pokemon in pokemons)
+        {
+            <li>@pokemon.Name</li>
+        }
+    </ul>
+}
+else
+{
+    <text>Finding pokemons...</text>
+}
+
+
+@functions {
+IEnumerable<Pokemon> pokemons;
+
+protected override async Task OnInitAsync()
+{
+    pokemons = await PokedexClient.ApiPokemonsGetAsync();
+}
+}
