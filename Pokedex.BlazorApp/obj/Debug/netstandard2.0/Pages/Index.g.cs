@@ -34,7 +34,7 @@ namespace Pokedex.BlazorApp.Pages
             builder.CloseComponent();
             builder.AddContent(5, "\n\n");
             builder.OpenComponent<Pokedex.BlazorApp.Components.Pokemon.PokemonDetails>(6);
-            builder.AddAttribute(7, "Id", Microsoft.AspNetCore.Blazor.Components.RuntimeHelpers.TypeCheck<System.Int32>(1));
+            builder.AddAttribute(7, "Id", Microsoft.AspNetCore.Blazor.Components.RuntimeHelpers.TypeCheck<System.Int32?>(1));
             builder.CloseComponent();
         }
         #pragma warning restore 1998
