@@ -112,3 +112,7 @@ C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\bl
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\blazor\resolvedassemblies\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\blazor\resolvedassemblies\Pokedex.BlazorApp.pdb
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\blazor\resolvedassemblies\Pokedex.Client.pdb
+C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\Components\Pokemon\PokemonList.g.i.cs
+C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\Components\Pokemon\PokemonList.g.cs
+C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\Components\Pokemon\PokemonDetails.g.i.cs
+C:\Users\Kuba\source\repos\Pokedex\Pokedex.BlazorApp\obj\Debug\netstandard2.0\Components\Pokemon\PokemonDetails.g.cs
