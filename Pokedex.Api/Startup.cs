@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.IO;
+using System.Reflection;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -56,7 +59,7 @@ namespace Pokedex.Api
             });
 
             // Configure Blazor
-            app.UseBlazor<Pokedex.BlazorApp.Program>();
+            app.UseBlazor<BlazorApp.Program>();
         }
     }
 }

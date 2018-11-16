@@ -4,13 +4,21 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
   <Target Name="NSwag" BeforeTargets="Build">
     <Exec Command="$(NSwagExe) swagger2csclient /input:pokedex-swagger.json /namespace:$(RootNamespace) /InjectHttpClient:true /UseBaseUrl:false /output:PokedexClient.cs" />
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="NSwag.MSBuild" Version="11.20.1">
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="NSwag.CodeGeneration.CSharp" Version="12.0.0" />
+    <PackageReference Include="NSwag.MSBuild" Version="12.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

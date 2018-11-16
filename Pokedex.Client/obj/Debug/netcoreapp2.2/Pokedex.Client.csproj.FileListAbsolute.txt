@@ -1,9 +1,0 @@
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\bin\Debug\netcoreapp2.2\Pokedex.Client.deps.json
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\bin\Debug\netcoreapp2.2\Pokedex.Client.dll
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\bin\Debug\netcoreapp2.2\Pokedex.Client.pdb
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netcoreapp2.2\Pokedex.Client.csprojAssemblyReference.cache
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netcoreapp2.2\Pokedex.Client.csproj.CoreCompileInputs.cache
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netcoreapp2.2\Pokedex.Client.AssemblyInfoInputs.cache
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netcoreapp2.2\Pokedex.Client.AssemblyInfo.cs
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netcoreapp2.2\Pokedex.Client.dll
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netcoreapp2.2\Pokedex.Client.pdb
