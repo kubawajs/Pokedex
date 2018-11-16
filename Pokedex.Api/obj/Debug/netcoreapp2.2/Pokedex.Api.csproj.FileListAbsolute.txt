@@ -14,7 +14,5 @@ C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\obj\Debug\netcoreapp2.2\Pokedex.A
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\obj\Debug\netcoreapp2.2\Pokedex.Api.pdb
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\bin\Debug\netcoreapp2.2\Pokedex.BlazorApp.blazor.config
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\bin\Debug\netcoreapp2.2\Pokedex.BlazorApp.dll
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\bin\Debug\netcoreapp2.2\Pokedex.Client.dll
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\bin\Debug\netcoreapp2.2\Pokedex.BlazorApp.pdb
-C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\bin\Debug\netcoreapp2.2\Pokedex.Client.pdb
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Api\obj\Debug\netcoreapp2.2\Pokedex.Api.csproj.CopyComplete

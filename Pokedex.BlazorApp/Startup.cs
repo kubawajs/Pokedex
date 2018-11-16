@@ -7,7 +7,6 @@ namespace Pokedex.BlazorApp
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<Pokedex.Client.Client>();
         }
 
         public void Configure(IBlazorApplicationBuilder app)

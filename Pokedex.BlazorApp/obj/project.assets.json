@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Microsoft.AspNetCore.Blazor/0.6.0": {
+      "Microsoft.AspNetCore.Blazor/0.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.JSInterop": "0.6.0"
+          "Microsoft.JSInterop": "0.7.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll": {}
@@ -14,15 +14,15 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.Analyzers/0.6.0": {
+      "Microsoft.AspNetCore.Blazor.Analyzers/0.7.0": {
         "type": "package"
       },
-      "Microsoft.AspNetCore.Blazor.Browser/0.6.0": {
+      "Microsoft.AspNetCore.Blazor.Browser/0.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Blazor": "0.6.0",
+          "Microsoft.AspNetCore.Blazor": "0.7.0",
           "Microsoft.Extensions.DependencyInjection": "2.1.0",
-          "Mono.WebAssembly.Interop": "0.6.0"
+          "Mono.WebAssembly.Interop": "0.7.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll": {}
@@ -31,10 +31,10 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Blazor.Build/0.6.0": {
+      "Microsoft.AspNetCore.Blazor.Build/0.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Blazor.Analyzers": "0.6.0",
+          "Microsoft.AspNetCore.Blazor.Analyzers": "0.7.0",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2"
         },
         "compile": {
@@ -78,7 +78,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
-      "Microsoft.JSInterop/0.6.0": {
+      "Microsoft.JSInterop/0.7.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.JSInterop.dll": {}
@@ -96,10 +96,10 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Mono.WebAssembly.Interop/0.6.0": {
+      "Mono.WebAssembly.Interop/0.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.JSInterop": "0.6.0"
+          "Microsoft.JSInterop": "0.7.0"
         },
         "compile": {
           "lib/netstandard2.0/Mono.WebAssembly.Interop.dll": {}
@@ -122,81 +122,63 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "Newtonsoft.Json/11.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Pokedex.Client/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
-        },
-        "compile": {
-          "bin/placeholder/Pokedex.Client.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Pokedex.Client.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.Blazor/0.6.0": {
-      "sha512": "5fbtgq8125r25asDlgHk7LTroYPSGWRf7IhLyyf1vHGqo/LxLLsFdkAqaYpdM4+a/dC50esN2FxDFAqoOINyJQ==",
+    "Microsoft.AspNetCore.Blazor/0.7.0": {
+      "sha512": "8TT1EZP73UvyTWV3BtDZjPH+w223Ln8N6mG9p6s1f23Ftuk5zWoTHDklAzzH1Jfymd8f5SRu2g4jVMTgrtBAtg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor/0.6.0",
+      "path": "microsoft.aspnetcore.blazor/0.7.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "THIRD-PARTY-NOTICES.txt",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.xml",
-        "microsoft.aspnetcore.blazor.0.6.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.0.7.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.Analyzers/0.6.0": {
-      "sha512": "pWjX7uD/iQmvourOhVFqU8O+B5ArBRoflVz95zoOew8JSVwV5d0JoR5IsTeoMJ5VNFY1+SXSrKA3S/bL2a0RHQ==",
+    "Microsoft.AspNetCore.Blazor.Analyzers/0.7.0": {
+      "sha512": "Xym0zBTO6+75eoxAqC4Iqu+sxs52xn90vo0eiEmr8N46ZDbpWszkRg3KinYMnNgbQ/qdwnV7zzE3OkUeVlNpsQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.analyzers/0.6.0",
+      "path": "microsoft.aspnetcore.blazor.analyzers/0.7.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "THIRD-PARTY-NOTICES.txt",
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Blazor.Analyzers.dll",
-        "microsoft.aspnetcore.blazor.analyzers.0.6.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.analyzers.0.7.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.Browser/0.6.0": {
-      "sha512": "YccFYiWR89O+35twMsJWtDGlJDrzEKq8gxbxqyq7QWOmsmSuGXWe3Hje4Lh0NY9MXZrgm/tdzQyv2V1n1p9vHg==",
+    "Microsoft.AspNetCore.Blazor.Browser/0.7.0": {
+      "sha512": "9DeNtjStGjeVTvNaRvgXBSpqidF5MZ8c/8ZzRXPsDeZorzljgR14PiSWtVCvNuRFNeDXyAoaj+Y+nicP9N/jrg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.browser/0.6.0",
+      "path": "microsoft.aspnetcore.blazor.browser/0.7.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "THIRD-PARTY-NOTICES.txt",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.xml",
-        "microsoft.aspnetcore.blazor.browser.0.6.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.browser.0.7.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.browser.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Blazor.Build/0.6.0": {
-      "sha512": "BVsxRHZdrys71/unLirfic31OnISc21bKJFqwzSSdj031svichjlaZurUX5/VCKZsRWMoSvKspLgfpnwIE45+Q==",
+    "Microsoft.AspNetCore.Blazor.Build/0.7.0": {
+      "sha512": "TpTAliV9RgjIBETAHSwtZa0V5/iUCdJ0TBGFNzOS39IxHI5yI0DfwnGZertT/qgCGHBkmWzjyD/+xAiv3c0SOg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.blazor.build/0.6.0",
+      "path": "microsoft.aspnetcore.blazor.build/0.7.0",
       "hasTools": true,
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/netstandard1.0/Microsoft.AspNetCore.Blazor.Build.props",
         "build/netstandard1.0/Microsoft.AspNetCore.Blazor.Build.targets",
         "lib/netstandard1.0/Microsoft.AspNetCore.Blazor.TagHelperWorkaround.dll",
-        "microsoft.aspnetcore.blazor.build.0.6.0.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.build.0.7.0.nupkg.sha512",
         "microsoft.aspnetcore.blazor.build.nuspec",
         "targets/All.props",
         "targets/All.targets",
@@ -251,13 +233,11 @@
         "tools/illink/illink.deps.json",
         "tools/illink/illink.dll",
         "tools/illink/illink.runtimeconfig.json",
-        "tools/mono/asmjs/mono.asm.js",
-        "tools/mono/asmjs/mono.js",
-        "tools/mono/asmjs/mono.js.mem",
         "tools/mono/bcl/Facades/Microsoft.Win32.Primitives.dll",
         "tools/mono/bcl/Facades/Microsoft.Win32.Registry.AccessControl.dll",
         "tools/mono/bcl/Facades/Microsoft.Win32.Registry.dll",
         "tools/mono/bcl/Facades/System.AppContext.dll",
+        "tools/mono/bcl/Facades/System.Buffers.dll",
         "tools/mono/bcl/Facades/System.Collections.Concurrent.dll",
         "tools/mono/bcl/Facades/System.Collections.NonGeneric.dll",
         "tools/mono/bcl/Facades/System.Collections.Specialized.dll",
@@ -403,7 +383,7 @@
         "tools/mono/bcl/I18N.West.dll",
         "tools/mono/bcl/I18N.dll",
         "tools/mono/bcl/Microsoft.CSharp.dll",
-        "tools/mono/bcl/Mono.CSharp.dll",
+        "tools/mono/bcl/Mono.Cecil.dll",
         "tools/mono/bcl/Mono.Data.Sqlite.dll",
         "tools/mono/bcl/Mono.Data.Tds.dll",
         "tools/mono/bcl/Mono.Security.dll",
@@ -444,11 +424,12 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
-      "sha512": "ab4+TZw3Sxqrr5TwrwVyABeQkhSxYMJXgG6yZw7T+r6Vz+hcOt+pK79o15ESG7kZvWAK9wRG7emnTIia5O6R1Q==",
+      "sha512": "sa/cztXesLyTgCiYuef0RK2EAImnak0w2wrjCh/YBTvbn4iV2eTy0q3F8CyUkGiaYEyxUKGVTko6+7SMRBL4Gg==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "hasTools": true,
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.CodeGeneration.targets",
         "build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props",
@@ -470,10 +451,11 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/2.1.0": {
-      "sha512": "HG/PMzoRWkHk+XHknD7J2q/UmeXF8eqqwDEfgvNL6nkOITcYgp3r+pCCPHD0dxVXtZjaFru7PoYxmvq2NcJy6Q==",
+      "sha512": "gqQviLfuA31PheEGi+XJoZc1bc9H9RsPa9Gq9XuDct7XGWSR9eVXjK5Sg7CSUPhTFHSuxUFY12wcTYLZ4zM1hg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
         "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
@@ -486,10 +468,11 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
-      "sha512": "6Krshi1mFyDQ+NZSgyxv4GN9I45TXjmXTHJZ3c7x24m/IV2iy7euEivIdYpQXdBGzzslZcHBS9ElN2Cs7n6wpQ==",
+      "sha512": "8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
@@ -497,22 +480,25 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
-    "Microsoft.JSInterop/0.6.0": {
-      "sha512": "H0FtGqfWWKcbHGofquZAJZgZw/YQ9zF475O2EAWWCI5OD6ALhSUS53TFwUD3DgueLOOgG0vm2axr6HHRhDwsVQ==",
+    "Microsoft.JSInterop/0.7.0": {
+      "sha512": "epldqT0eNfh0FieYfAd78kd1n11YsTdhOGEooMD0sC35MHin6wLMUYlPjAPM/irSKrVvo6E1wQsh/0kgQSVH3A==",
       "type": "package",
-      "path": "microsoft.jsinterop/0.6.0",
+      "path": "microsoft.jsinterop/0.7.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.JSInterop.dll",
-        "microsoft.jsinterop.0.6.0.nupkg.sha512",
+        "microsoft.jsinterop.0.7.0.nupkg.sha512",
         "microsoft.jsinterop.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -521,22 +507,25 @@
         "runtime.json"
       ]
     },
-    "Mono.WebAssembly.Interop/0.6.0": {
-      "sha512": "L9dTo61lnJ/8/cvsrEUN34KX1D1/H2s08bRq9hMD37ZReFHg5OC2N5DlgKzsGYMd66UBFwFny/XhDgMsk5QK9Q==",
+    "Mono.WebAssembly.Interop/0.7.0": {
+      "sha512": "YLCK1z+KPErQl9pQAE6f60ZDJNIKBh9s30tRnBO6jnBOU4nO+tseZKLk14bytg3HzodecnCI6n2kCGE4jUkSVw==",
       "type": "package",
-      "path": "mono.webassembly.interop/0.6.0",
+      "path": "mono.webassembly.interop/0.7.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Mono.WebAssembly.Interop.dll",
-        "mono.webassembly.interop.0.6.0.nupkg.sha512",
+        "mono.webassembly.interop.0.7.0.nupkg.sha512",
         "mono.webassembly.interop.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -658,47 +647,13 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "type": "package",
-      "path": "newtonsoft.json/11.0.2",
-      "files": [
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
-    "Pokedex.Client/1.0.0": {
-      "type": "project",
-      "path": "../Pokedex.Client/Pokedex.Client.csproj",
-      "msbuildProject": "../Pokedex.Client/Pokedex.Client.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Microsoft.AspNetCore.Blazor.Browser >= 0.6.0",
-      "Microsoft.AspNetCore.Blazor.Build >= 0.6.0",
-      "NETStandard.Library >= 2.0.3",
-      "Pokedex.Client >= 1.0.0"
+      "Microsoft.AspNetCore.Blazor.Browser >= 0.7.0",
+      "Microsoft.AspNetCore.Blazor.Build >= 0.7.0",
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -730,11 +685,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "C:\\Users\\Kuba\\source\\repos\\Pokedex\\Pokedex.Client\\Pokedex.Client.csproj": {
-              "projectPath": "C:\\Users\\Kuba\\source\\repos\\Pokedex\\Pokedex.Client\\Pokedex.Client.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -748,12 +699,12 @@
         "dependencies": {
           "Microsoft.AspNetCore.Blazor.Browser": {
             "target": "Package",
-            "version": "[0.6.0, )"
+            "version": "[0.7.0, )"
           },
           "Microsoft.AspNetCore.Blazor.Build": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[0.6.0, )"
+            "version": "[0.7.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

@@ -6,3 +6,4 @@ C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netstandard2.0\Poked
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netstandard2.0\Pokedex.Client.AssemblyInfo.cs
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netstandard2.0\Pokedex.Client.dll
 C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netstandard2.0\Pokedex.Client.pdb
+C:\Users\Kuba\source\repos\Pokedex\Pokedex.Client\obj\Debug\netstandard2.0\Pokedex.Client.csprojAssemblyReference.cache
