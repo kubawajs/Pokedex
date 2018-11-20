@@ -7,16 +7,10 @@
   "paths": {
     "/api/Pokemons": {
       "get": {
-        "tags": [
-          "Pokemons"
-        ],
+        "tags": [ "Pokemons" ],
         "operationId": "GetPokemon",
         "consumes": [],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "produces": [ "text/plain", "application/json", "text/json" ],
         "parameters": [],
         "responses": {
           "200": {
@@ -24,72 +18,43 @@
             "schema": {
               "uniqueItems": false,
               "type": "array",
-              "items": {
-                "$ref": "#/definitions/Pokemon"
-              }
+              "items": { "$ref": "#/definitions/Pokemon" }
             }
           }
         }
       },
       "post": {
-        "tags": [
-          "Pokemons"
-        ],
+        "tags": [ "Pokemons" ],
         "operationId": "PostPokemon",
-        "consumes": [
-          "application/json-patch+json",
-          "application/json",
-          "text/json",
-          "application/*+json"
-        ],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+        "produces": [ "text/plain", "application/json", "text/json" ],
         "parameters": [
           {
             "name": "pokemon",
             "in": "body",
             "required": false,
-            "schema": {
-              "$ref": "#/definitions/Pokemon"
-            }
+            "schema": { "$ref": "#/definitions/Pokemon" }
           }
         ],
         "responses": {
           "201": {
             "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/Pokemon"
-            }
+            "schema": { "$ref": "#/definitions/Pokemon" }
           },
           "400": {
             "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
-          "default": {
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
+          "default": { "schema": { "$ref": "#/definitions/ProblemDetails" } }
         }
       }
     },
     "/api/Pokemons/{id}": {
       "get": {
-        "tags": [
-          "Pokemons"
-        ],
+        "tags": [ "Pokemons" ],
         "operationId": "GetPokemon",
         "consumes": [],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "produces": [ "text/plain", "application/json", "text/json" ],
         "parameters": [
           {
             "name": "id",
@@ -102,39 +67,20 @@
         "responses": {
           "200": {
             "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/Pokemon"
-            }
+            "schema": { "$ref": "#/definitions/Pokemon" }
           },
           "404": {
             "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
-          "default": {
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
+          "default": { "schema": { "$ref": "#/definitions/ProblemDetails" } }
         }
       },
       "put": {
-        "tags": [
-          "Pokemons"
-        ],
+        "tags": [ "Pokemons" ],
         "operationId": "PutPokemon",
-        "consumes": [
-          "application/json-patch+json",
-          "application/json",
-          "text/json",
-          "application/*+json"
-        ],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+        "produces": [ "text/plain", "application/json", "text/json" ],
         "parameters": [
           {
             "name": "id",
@@ -147,45 +93,27 @@
             "name": "pokemon",
             "in": "body",
             "required": false,
-            "schema": {
-              "$ref": "#/definitions/Pokemon"
-            }
+            "schema": { "$ref": "#/definitions/Pokemon" }
           }
         ],
         "responses": {
           "404": {
             "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
-          "204": {
-            "description": "Success"
-          },
+          "204": { "description": "Success" },
           "400": {
             "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
-          "default": {
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
+          "default": { "schema": { "$ref": "#/definitions/ProblemDetails" } }
         }
       },
       "delete": {
-        "tags": [
-          "Pokemons"
-        ],
+        "tags": [ "Pokemons" ],
         "operationId": "DeletePokemon",
         "consumes": [],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "produces": [ "text/plain", "application/json", "text/json" ],
         "parameters": [
           {
             "name": "id",
@@ -198,27 +126,17 @@
         "responses": {
           "404": {
             "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
           "200": {
             "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/Pokemon"
-            }
+            "schema": { "$ref": "#/definitions/Pokemon" }
           },
           "400": {
             "description": "Bad Request",
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
-          "default": {
-            "schema": {
-              "$ref": "#/definitions/ProblemDetails"
-            }
-          }
+          "default": { "schema": { "$ref": "#/definitions/ProblemDetails" } }
         }
       }
     }
@@ -231,12 +149,8 @@
           "format": "int32",
           "type": "integer"
         },
-        "name": {
-          "type": "string"
-        },
-        "category": {
-          "type": "string"
-        },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
         "height": {
           "format": "double",
           "type": "number"
@@ -250,26 +164,16 @@
     "ProblemDetails": {
       "type": "object",
       "properties": {
-        "type": {
-          "type": "string"
-        },
-        "title": {
-          "type": "string"
-        },
+        "type": { "type": "string" },
+        "title": { "type": "string" },
         "status": {
           "format": "int32",
           "type": "integer"
         },
-        "detail": {
-          "type": "string"
-        },
-        "instance": {
-          "type": "string"
-        }
+        "detail": { "type": "string" },
+        "instance": { "type": "string" }
       },
-      "additionalProperties": {
-        "type": "object"
-      }
+      "additionalProperties": { "type": "object" }
     }
   }
 }

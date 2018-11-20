@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pokedex.BlazorApp\Pokedex.BlazorApp.csproj" />
+    <ProjectReference Include="..\Pokedex.Blazor.App\Pokedex.Blazor.App.csproj" />
   </ItemGroup>
 
 </Project>

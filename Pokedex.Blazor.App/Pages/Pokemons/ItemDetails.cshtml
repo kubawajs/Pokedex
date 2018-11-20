@@ -1,0 +1,43 @@
+﻿@page "/pokemons/details"
+@using Pokedex.Client
+@inject Client PokedexClient
+
+<h2>Pokemon details</h2>
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+    </tr>
+    </thead>
+    @if (_pokemon != null)
+    {
+        <tbody>
+            <tr>
+                <th scope="row">@_pokemon.Id</th>
+                <td>@_pokemon.Name</td>
+                <td>@_pokemon.Category</td>
+                <td>@_pokemon.Height</td>
+                <td>@_pokemon.Weight</td>
+            </tr>
+        }
+        </tbody>
+    }
+    else
+    {
+        <text>Finding pokemon...</text>
+    }
+</table>
+
+@functions {
+    private Pokemon _pokemon;
+
+    protected override async Task OnInitAsync()
+    {
+        _pokemon = await PokedexClient.GetPokemonAsync(12);
+    }
+}

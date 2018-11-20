@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
 
-namespace Pokedex.BlazorApp
+namespace Pokedex.Blazor.App
 {
     public class Program
     {
