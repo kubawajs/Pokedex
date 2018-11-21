@@ -4,35 +4,25 @@
 
 <h2>Pokemon details</h2>
 
-<table class="table table-hover">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Height</th>
-        <th scope="col">Weight</th>
-    </tr>
-    </thead>
-    @if (_pokemon != null)
-    {
-        <tbody>
-        <tr>
-            <th scope="row">@_pokemon.Id</th>
-            <td>@_pokemon.Name</td>
-            <td>@_pokemon.Category</td>
-            <td>@_pokemon.Height</td>
-            <td>@_pokemon.Weight</td>
-        </tr>
-        </tbody>
-    }
-    else
-    {
-        <text>Finding pokemon...</text>
-    }
-</table>
 
-@functions {
+@if (_pokemon != null)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <PokemonCard Pokemon="@_pokemon"></PokemonCard>
+        </div>
+        <div class="col-md-8">
+            <PokemonTable Pokemon="@_pokemon"></PokemonTable>
+        </div>
+    </div>
+}
+else
+{
+    <text>Finding pokemon...</text>
+}
+
+@functions
+{
     [Parameter]
     private int Id { get; set; }
     private Pokemon _pokemon;

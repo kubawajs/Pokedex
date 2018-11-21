@@ -15,7 +15,7 @@ Example .NET Core application which works like Pokedex from Pokemon anime.
 
 ## DONE
 
-* TODO
+* FEATURE: details component
 
 ## TODO
 
@@ -23,3 +23,5 @@ Example .NET Core application which works like Pokedex from Pokemon anime.
 * FEATURE: add views and redirecting between views
 * FEATURE: images for all pokemons
 * IMPROVEMENT: improve styling
+* FEATURE: create one page view with all components
+* FEATURE: add paging to list

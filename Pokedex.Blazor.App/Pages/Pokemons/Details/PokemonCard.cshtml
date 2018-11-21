@@ -1,0 +1,13 @@
+﻿@using Pokedex.Client
+
+<div class="card text-white bg-success mb-3">
+    <div class="card-header">@Pokemon.Category</div>
+    <div class="card-body">
+        <img class="card-img-top" src="~/assets/001Bulbasaur.jpg" alt="Card image cap">
+        <h5 class="card-title">#@Pokemon.Id @Pokemon.Name</h5>
+    </div>
+</div>
+
+@functions {
+    [Parameter] private Pokemon Pokemon { get; set; }
+}
