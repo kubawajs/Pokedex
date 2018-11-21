@@ -1,6 +1,6 @@
 ﻿@using Pokedex.Client
 
-<div class="card text-white bg-success mb-3">
+<div class="card text-white @GetCardColor() mb-3">
     <div class="card-header">@Pokemon.Category</div>
     <div class="card-body">
         <img class="card-img-top" src="~/assets/001Bulbasaur.jpg" alt="Card image cap">
@@ -10,4 +10,30 @@
 
 @functions {
     [Parameter] private Pokemon Pokemon { get; set; }
+    private readonly string _defaultColor = "bg-light";
+
+    private readonly Dictionary<string, string> _categoryToColorMapping = new Dictionary<string, string>()
+    {
+        { "water", "bg-primary" },
+        { "bug", "bg-success" },
+        { "grass", "bg-success" },
+        { "fire", "bg-danger" },
+        { "electric", "bg-warning" },
+        { "normal", "bg-secondary" },
+        { "poison", "bg-warning" },
+        { "ground", "bg-secondary" },
+        { "fairy", "bg-info" },
+        { "fighting", "bg-dark" },
+        { "psychic", "bg-danger" },
+        { "rock", "bg-dark" },
+        { "dragon", "bg-danger" },
+        { "ice", "bg-info" },
+        { "flying", "bg-primary" }
+    };
+
+    private string GetCardColor()
+    {
+        var key = Pokemon.Category.ToLower();
+        return _categoryToColorMapping.ContainsKey(key) ? _categoryToColorMapping[key] : _defaultColor;
+    }
 }
