@@ -1,6 +1,12 @@
 # Pokedex
 Example .NET Core application which works like Pokedex from Pokemon anime.
 
+API
+![Swagger API Screen](https://github.com/kubawajs/Pokedex/raw/master/SwaggerAPI.JPG)
+
+Blazor App
+![Blazor App Screen](https://github.com/kubawajs/Pokedex/raw/master/BlazorApp.JPG)
+
 ## Usage
 
 ```
@@ -16,6 +22,7 @@ Example .NET Core application which works like Pokedex from Pokemon anime.
 ## DONE
 
 * FEATURE: details component
+* FEATURE: search by id component and style
 
 ## TODO
 
