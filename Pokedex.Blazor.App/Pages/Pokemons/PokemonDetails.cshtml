@@ -17,14 +17,13 @@
     @if (_pokemon != null)
     {
         <tbody>
-            <tr>
-                <th scope="row">@_pokemon.Id</th>
-                <td>@_pokemon.Name</td>
-                <td>@_pokemon.Category</td>
-                <td>@_pokemon.Height</td>
-                <td>@_pokemon.Weight</td>
-            </tr>
-        }
+        <tr>
+            <th scope="row">@_pokemon.Id</th>
+            <td>@_pokemon.Name</td>
+            <td>@_pokemon.Category</td>
+            <td>@_pokemon.Height</td>
+            <td>@_pokemon.Weight</td>
+        </tr>
         </tbody>
     }
     else
@@ -34,10 +33,12 @@
 </table>
 
 @functions {
+    [Parameter]
+    private int Id { get; set; }
     private Pokemon _pokemon;
 
-    protected override async Task OnInitAsync()
+    protected override async Task OnParametersSetAsync()
     {
-        _pokemon = await PokedexClient.GetPokemonAsync(12);
+        _pokemon = await PokedexClient.GetPokemonAsync(Id);
     }
 }
