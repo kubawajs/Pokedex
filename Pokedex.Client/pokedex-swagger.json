@@ -8,7 +8,7 @@
     "/api/Pokemons": {
       "get": {
         "tags": [ "Pokemons" ],
-        "operationId": "GetPokemon",
+        "operationId": "GetPokemons",
         "consumes": [],
         "produces": [ "text/plain", "application/json", "text/json" ],
         "parameters": [],
@@ -137,6 +137,64 @@
             "schema": { "$ref": "#/definitions/ProblemDetails" }
           },
           "default": { "schema": { "$ref": "#/definitions/ProblemDetails" } }
+        }
+      }
+    },
+    "/api/Pokemons/page={pageNumber}/items={items}": {
+      "get": {
+        "tags": [ "Pokemons" ],
+        "operationId": "GetPokemonRange",
+        "consumes": [],
+        "produces": [ "text/plain", "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "items",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "uniqueItems": false,
+              "type": "array",
+              "items": { "$ref": "#/definitions/Pokemon" }
+            }
+          },
+          "204": { "description": "Success" },
+          "404": {
+            "description": "Not Found",
+            "schema": { "$ref": "#/definitions/ProblemDetails" }
+          },
+          "default": { "schema": { "$ref": "#/definitions/ProblemDetails" } }
+        }
+      }
+    },
+    "/api/Pokemons/count": {
+      "get": {
+        "tags": [ "Pokemons" ],
+        "operationId": "GetPokemonsCount",
+        "consumes": [],
+        "produces": [ "text/plain", "application/json", "text/json" ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
         }
       }
     }

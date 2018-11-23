@@ -23,12 +23,13 @@ Blazor App
 
 * FEATURE: details component
 * FEATURE: search by id component and style
+* FEATURE: add paging to list
 
 ## TODO
 
 * IMPROVEMENT: add repository pattern
 * FEATURE: add views and redirecting between views
+* FEATURE: add redirect on click from pokemons list to pokemon details
 * FEATURE: images for all pokemons
 * IMPROVEMENT: improve styling
 * FEATURE: create one page view with all components
-* FEATURE: add paging to list

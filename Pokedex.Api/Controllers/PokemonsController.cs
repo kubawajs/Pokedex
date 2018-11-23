@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pokedex.Api.Data;
 using Pokedex.Api.Models;
+using Microsoft.AspNetCore.Http;
 
 [assembly:ApiConventionType(typeof(DefaultApiConventions))]
 namespace Pokedex.Api.Controllers
@@ -22,7 +24,7 @@ namespace Pokedex.Api.Controllers
 
         // GET: api/Pokemons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pokemon>>> GetPokemon()
+        public async Task<ActionResult<IEnumerable<Pokemon>>> GetPokemons()
         {
             return await _context.Pokemon.ToListAsync();
         }
@@ -39,6 +41,38 @@ namespace Pokedex.Api.Controllers
             }
 
             return pokemon;
+        }
+
+        // GET: api/Pokemons/page=1/items=10
+        [HttpGet("page={pageNumber}/items={items}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult<IEnumerable<Pokemon>>> GetPokemonRange(int pageNumber, int items)
+        {
+            if (pageNumber <= 0)
+            {
+                return NotFound();
+            }
+
+            if (items <= 0)
+            {
+                return NotFound();
+            }
+            var skipItems = (pageNumber * items) - items;
+            if (_context.Pokemon != null)
+            {
+                return await _context.Pokemon.Skip(skipItems).Take(items).ToListAsync();
+            }
+            return NoContent();
+        }
+
+        // GET: api/Pokemons/Count
+        [HttpGet("count")]
+        public async Task<ActionResult<int>> GetPokemonsCount()
+        {
+            return await _context.Pokemon.CountAsync();
         }
 
         // PUT: api/Pokemons/5

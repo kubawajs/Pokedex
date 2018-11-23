@@ -6,27 +6,27 @@
 
 <table class="table table-hover">
     <thead class="thead-dark">
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Height</th>
-        <th scope="col">Weight</th>
-    </tr>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Height</th>
+            <th scope="col">Weight</th>
+        </tr>
     </thead>
     @if (_pokemons != null)
     {
         <tbody>
-        @foreach (var pokemon in _pokemons)
-        {
-            <tr>
-                <th scope="row">@pokemon.Id</th>
-                <td>@pokemon.Name</td>
-                <td>@pokemon.Category</td>
-                <td>@pokemon.Height</td>
-                <td>@pokemon.Weight</td>
-            </tr>
-        }
+            @foreach (var pokemon in _pokemons)
+            {
+                <tr>
+                    <th scope="row">@pokemon.Id</th>
+                    <td>@pokemon.Name</td>
+                    <td>@pokemon.Category</td>
+                    <td>@pokemon.Height</td>
+                    <td>@pokemon.Weight</td>
+                </tr>
+            }
         </tbody>
     }
     else
@@ -35,11 +35,78 @@
     }
 </table>
 
+<div class="row">
+    <div class="col-12 d-flex flex-row justify-content-center">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-warning" onclick="@PreviousPage"><span class="oi oi-chevron-left"></span></button>
+            <button type="button" class="btn btn-light">@PageNumber</button>
+            <button type="button" class="btn btn-warning" onclick="@NextPage"><span class="oi oi-chevron-right"></span></button>
+        </div>
+        <div class="btn-group" role="group">
+            @foreach (var number in _allowedItemsOnPage)
+            {
+                <button type="button" class="btn btn-primary" value="@number" onclick="@(() => ChangeNumberOfItems(number))">@number.ToString()</button>
+            }
+        </div>
+    </div>
+</div>
+
+
+
 @functions {
+
+    [Parameter]
+    private int PageNumber { get; set; } = 1;
+
+    [Parameter]
+    private int Items { get; set; } = 10;
+
     private IEnumerable<Pokemon> _pokemons;
+    private int _allPageNumber = 1;
+    private int _numberOfPokemons;
+    private int[] _allowedItemsOnPage = {5, 10, 20, 50};
+
 
     protected override async Task OnInitAsync()
     {
-        _pokemons = await PokedexClient.GetPokemonAllAsync();
+        _numberOfPokemons = await PokedexClient.GetPokemonsCountAsync();
+        _allPageNumber = GetAllPageNumber();
+        _pokemons = await GetPokemons();
+    }
+
+    private async Task NextPage()
+    {
+        if (PageNumber < _allPageNumber)
+        {
+            PageNumber++;
+            _pokemons = await GetPokemons();
+        }
+    }
+
+    private async Task PreviousPage()
+    {
+        if (PageNumber > 1)
+        {
+            PageNumber--;
+            _pokemons = await GetPokemons();
+        }
+    }
+
+    private async Task ChangeNumberOfItems(int number)
+    {
+        Items = number;
+        PageNumber = 1;
+        _allPageNumber = GetAllPageNumber();
+        _pokemons = await GetPokemons();
+    }
+
+    private async Task<IEnumerable<Pokemon>> GetPokemons()
+    {
+        return await PokedexClient.GetPokemonRangeAsync(PageNumber, Items);
+    }
+
+    private int GetAllPageNumber()
+    {
+        return (int)Math.Ceiling((double)_numberOfPokemons / Items);
     }
 }
