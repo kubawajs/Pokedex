@@ -28,6 +28,7 @@ Blazor App
 
 ## TODO
 
+* BUG: problem with binding parameter Id to remove action
 * IMPROVEMENT: add repository pattern
 * FEATURE: add views and redirecting between views
 * FEATURE: add redirect on click from pokemons list to pokemon details
