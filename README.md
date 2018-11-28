@@ -24,6 +24,7 @@ Blazor App
 * FEATURE: details component
 * FEATURE: search by id component and style
 * FEATURE: add paging to list
+* FEATURE: remove pokemon component
 
 ## TODO
 

@@ -12,6 +12,7 @@
             <th scope="col">Category</th>
             <th scope="col">Height</th>
             <th scope="col">Weight</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     @if (_pokemons != null)
@@ -25,6 +26,7 @@
                     <td>@pokemon.Category</td>
                     <td>@pokemon.Height</td>
                     <td>@pokemon.Weight</td>
+                    <td><PokemonRemove Id="@pokemon.Id"/></td>
                 </tr>
             }
         </tbody>
