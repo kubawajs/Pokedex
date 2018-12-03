@@ -10,8 +10,13 @@ Blazor App
 ## Usage
 
 ```
-# swagger documentation
+# Api documentation
+https://localhost:xxxx/swagger/index.html
 ```
+
+## Prerequisites
+
+* [Visual Studio 2017 Preview](https://visualstudio.microsoft.com/vs/preview/)
 
 ## Technologies used
 
@@ -25,13 +30,14 @@ Blazor App
 * FEATURE: search by id component and style
 * FEATURE: add paging to list
 * FEATURE: remove pokemon component
+* BUG: problem with binding parameter Id to remove action
 
 ## TODO
 
-* BUG: problem with binding parameter Id to remove action
 * IMPROVEMENT: add repository pattern
 * FEATURE: add views and redirecting between views
 * FEATURE: add redirect on click from pokemons list to pokemon details
+* FEATURE: add pokemon edit component
 * FEATURE: images for all pokemons
 * IMPROVEMENT: improve styling
 * FEATURE: create one page view with all components

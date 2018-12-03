@@ -1,9 +1,13 @@
 ﻿@page "/pokemons/all"
+@using System.Net
 @using Pokedex.Client
 @inject Client PokedexClient
 
 <h2>Pokemons List</h2>
 
+<div class="row justify-content-center">
+
+</div>
 <table class="table table-hover">
     <thead class="thead-dark">
         <tr>
@@ -27,7 +31,9 @@
                 <td>@pokemon.Height</td>
                 <td>@pokemon.Weight</td>
                 <td>
-                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning" href="/pokemons/@pokemon.Id">
+                        Details
+                    </button>
                     <button type="button" class="btn btn-danger" onclick="@(() => SetActiveId((int) pokemon.Id))" data-toggle="modal" data-target="#removePokemonModal">
                         Remove
                     </button>
@@ -40,7 +46,7 @@
     }
     else
     {
-        <text>Finding pokemons...</text>
+        <image src = "/assets/loader.gif"></image>  
     }
 </table>
 
