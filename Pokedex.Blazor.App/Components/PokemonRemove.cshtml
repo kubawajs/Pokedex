@@ -1,11 +1,6 @@
 ﻿@using Pokedex.Client
 @inject Client PokedexClient
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#removePokemonModal">
-    Remove
-</button>
-
 <!-- Modal -->
 <div class="modal fade" id="removePokemonModal" tabindex="-1" role="dialog" aria-labelledby="removePokemon" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -17,7 +12,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                Are you sure you want to delete this pokemon?
+                Are you sure you want to delete this pokemon? (Id = @Id)
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" data-dismiss="modal" onclick="@RemovePokemon">Yes</button>
