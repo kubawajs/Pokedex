@@ -1,5 +1,4 @@
 ﻿@page "/pokemons/all"
-@using System.Net
 @using Pokedex.Client
 @inject Client PokedexClient
 
@@ -31,7 +30,7 @@
                 <td>@pokemon.Height</td>
                 <td>@pokemon.Weight</td>
                 <td>
-                    <button type="button" class="btn btn-warning" href="/pokemons/@pokemon.Id">
+                    <button type="button" class="btn btn-warning">
                         Details
                     </button>
                     <button type="button" class="btn btn-danger" onclick="@(() => SetActiveId((int) pokemon.Id))" data-toggle="modal" data-target="#removePokemonModal">
